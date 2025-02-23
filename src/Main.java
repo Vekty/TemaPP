@@ -5,7 +5,15 @@ public class Main {
         BufferedReader br=new BufferedReader(fr);
         String line=br.readLine();
         System.out.printf("%s\n",line);
-        String upperline=line.toUpperCase();
-        System.out.printf("%s",upperline);
+        InputStreamReader isr=new InputStreamReader(System.in);
+        BufferedReader brr=new BufferedReader(isr);
+        int number=Integer.parseInt(brr.readLine());
+        switch(number)
+        {
+            case 0:
+                String upper=line.toUpperCase();
+                System.out.printf("%s",upper);
+                break;
+        }
     }
 }
