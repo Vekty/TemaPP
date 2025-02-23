@@ -14,6 +14,10 @@ public class Main {
                 String upper=line.toUpperCase();
                 System.out.printf("%s",upper);
                 break;
+            case 1:
+                String clear=line.replaceAll("[,.?!]","");
+                System.out.printf("%s",clear);
+                break;
         }
     }
 }
